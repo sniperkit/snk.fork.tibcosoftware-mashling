@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package command
 
 import (
 	"fmt"
 
-	"github.com/TIBCOSoftware/mashling/internal/app/version"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/version"
 )
 
 func init() {

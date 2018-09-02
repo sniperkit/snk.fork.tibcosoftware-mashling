@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v1
 
 import (
@@ -13,10 +18,11 @@ import (
 	faction "github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	ftrigger "github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/triggers"
-	condition "github.com/TIBCOSoftware/mashling/lib/conditions"
-	"github.com/TIBCOSoftware/mashling/lib/types"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/triggers"
+	condition "github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/conditions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 // Translate translates mashling gateway JSON config to a Flogo app.
@@ -360,7 +366,7 @@ func resolveConfigurationReference(configDefinitions map[string]types.Config, tr
 // GetLocalTriggerMetadata extracts trigger metadata from the local json definition.
 func GetLocalTriggerMetadata(gitHubPath string) (*ftrigger.Metadata, error) {
 	// Look for local first
-	triggerPath := strings.Replace(gitHubPath, "github.com/TIBCOSoftware/mashling/", "", 1) + "/trigger.json"
+	triggerPath := strings.Replace(gitHubPath, "github.com/sniperkit/snk.fork.tibcosoftware-mashling/", "", 1) + "/trigger.json"
 	data, err := triggers.Asset(triggerPath)
 	if err != nil {
 		// Look in vendor now

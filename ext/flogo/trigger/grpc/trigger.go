@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpc
 
 import (
@@ -9,13 +14,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"google.golang.org/grpc/credentials"
-
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 var addr string

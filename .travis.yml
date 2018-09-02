@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 sudo: required
 language :
   - go
@@ -30,10 +33,10 @@ install:
 
 script:
   - cd $GOPATH/src/github.com/TIBCOSoftware
-  - git clone https://github.com/TIBCOSoftware/mashling-cicd.git mashling-cicd
-  - git clone https://github.com/TIBCOSoftware/mashling-recipes.git mashling-recipes
+  - git clone https://github.com/sniperkit/snk.fork.tibcosoftware-mashling-cicd.git mashling-cicd
+  - git clone https://github.com/sniperkit/snk.fork.tibcosoftware-mashling-recipes.git mashling-recipes
   - cd mashling/docs/web && hugo
-  - cd $GOPATH/src/github.com/TIBCOSoftware/mashling
+  - cd $GOPATH/src/github.com/sniperkit/snk.fork.tibcosoftware-mashling
   - go test ./... -v 2> >(tee gotest_stderr_file) | tee gotest_stdout_file
   - go run build.go build
   - cd $GOPATH/src/github.com/TIBCOSoftware
@@ -51,7 +54,7 @@ deploy:
   - provider: releases
     api_key: "$GITHUB_USER_TOKEN"
     file_glob: true
-    file: $GOPATH/src/github.com/TIBCOSoftware/mashling/artifacts/*
+    file: $GOPATH/src/github.com/sniperkit/snk.fork.tibcosoftware-mashling/artifacts/*
     skip_cleanup: true
     on:
       tags: true

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mqtt
 
 import (
@@ -14,15 +19,15 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	condition "github.com/TIBCOSoftware/mashling/lib/conditions"
-	"github.com/TIBCOSoftware/mashling/lib/util"
-
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	lightstep "github.com/lightstep/lightstep-tracer-go"
 	opentracing "github.com/opentracing/opentracing-go"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	"sourcegraph.com/sourcegraph/appdash"
 	appdashtracing "sourcegraph.com/sourcegraph/appdash/opentracing"
+
+	condition "github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/conditions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 const (

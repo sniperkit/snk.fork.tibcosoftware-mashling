@@ -1,12 +1,20 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
  */
 package types
 
-import "encoding/json"
-import "github.com/TIBCOSoftware/flogo-lib/core/action"
+import (
+	"encoding/json"
+
+	"github.com/TIBCOSoftware/flogo-lib/core/action"
+)
 
 type Microgateway struct {
 	MashlingSchema string  `json:"mashling_schema"`

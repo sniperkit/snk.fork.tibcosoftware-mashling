@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package model
 
 import (
@@ -7,10 +12,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/consul"
-	gwerrors "github.com/TIBCOSoftware/mashling/internal/pkg/model/errors"
-	v1 "github.com/TIBCOSoftware/mashling/internal/pkg/model/v1"
-	v2 "github.com/TIBCOSoftware/mashling/internal/pkg/model/v2"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/consul"
+	gwerrors "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/errors"
+	v1 "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v1"
+	v2 "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2"
 )
 
 // Gateway represents an instance of a specific version of a Gateway.

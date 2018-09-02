@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 //go:generate go run ../generate/stub_generator.go
 
 package command
@@ -11,18 +16,19 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/TIBCOSoftware/mashling/internal/app/cli/assets"
-	"github.com/TIBCOSoftware/mashling/internal/app/version"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/grpcsupport"
-	gwerrors "github.com/TIBCOSoftware/mashling/internal/pkg/model/errors"
-	"github.com/TIBCOSoftware/mashling/pkg/files"
-	"github.com/TIBCOSoftware/mashling/pkg/strings"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/cli/assets"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/version"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/grpcsupport"
+	gwerrors "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/errors"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/files"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/strings"
 )
 
 const (
 	// ImportPath is the root import path regardless of location.
-	ImportPath = "github.com/TIBCOSoftware/mashling"
+	ImportPath = "github.com/sniperkit/snk.fork.tibcosoftware-mashling"
 	// DockerImage is the Docker image used to run the creation process.
 	DockerImage = "mashling/mashling-compile:0.4.0"
 )

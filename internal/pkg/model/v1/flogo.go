@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v1
 
 import (
@@ -10,9 +15,10 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-contrib/action/flow/definition"
 	"github.com/TIBCOSoftware/flogo-lib/app"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry"
-	"github.com/TIBCOSoftware/mashling/lib/types"
-	"github.com/TIBCOSoftware/mashling/pkg/strings"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/strings"
 )
 
 // LoadFlogoFlow loads a flogo flow reference (remote or local file) and returns the raw JSON

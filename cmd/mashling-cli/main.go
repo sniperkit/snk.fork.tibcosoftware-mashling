@@ -1,7 +1,12 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
-	"github.com/TIBCOSoftware/mashling/internal/app/cli/command"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/cli/command"
 )
 
 func main() {

@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package cache
 
-import "errors"
+import (
+	"errors"
+)
 
 // Enabled determines if the cache has been configured with a valid provider.
 var Enabled = false

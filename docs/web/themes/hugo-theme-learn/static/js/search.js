@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 var lunrIndex, pagesIndex;
 
 function endsWith(str, suffix) {

@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -8,10 +13,9 @@ package gorillamuxtrigger
 import (
 	"context"
 	"encoding/json"
+	"io/ioutil"
 	"net/http"
 	"testing"
-
-	"io/ioutil"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
@@ -31,7 +35,7 @@ func getJSONMetadata() string {
 const testConfig string = `{
 	  "name": "animals_rest_trigger",
 	  "id": "animals_rest_trigger",
-	  "ref": "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger",
+	  "ref": "github.com/sniperkit/snk.fork.tibcosoftware-mashling/ext/flogo/trigger/gorillamuxtrigger",
 	  "settings": {
 		  "port": "9096"
 	  },

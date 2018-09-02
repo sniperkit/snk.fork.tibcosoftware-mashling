@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Scrollbar Width function
 function getScrollBarWidth() {
     var inner = document.createElement('p');

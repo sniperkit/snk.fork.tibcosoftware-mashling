@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpcsupport
 
 import (
@@ -9,9 +14,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/ptypes/duration"
-
 	"github.com/golang/protobuf/jsonpb"
+	"github.com/golang/protobuf/ptypes/duration"
 	"github.com/golang/protobuf/ptypes/timestamp"
 )
 

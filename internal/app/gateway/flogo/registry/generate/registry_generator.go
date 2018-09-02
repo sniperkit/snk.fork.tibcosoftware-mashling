@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // This program generates a registry_gen.go to load known Flogo triggers and activities.
 
 // +build ignore
@@ -11,9 +16,9 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/actions"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/activities"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/triggers"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/actions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/activities"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/triggers"
 )
 
 // Registeree contains details on the item to register for Flogo
@@ -30,7 +35,7 @@ func main() {
 		if strings.HasPrefix(tr, "vendor/") {
 			ip = strings.Replace(tr, "vendor/", "", 1)
 		} else {
-			ip = "github.com/TIBCOSoftware/mashling/" + tr
+			ip = "github.com/sniperkit/snk.fork.tibcosoftware-mashling/" + tr
 		}
 		ip = strings.Replace(ip, "/trigger.json", "", 1)
 		pn := strings.Replace(tr, "/trigger.json", "", 1)
@@ -44,7 +49,7 @@ func main() {
 		if strings.HasPrefix(actv, "vendor/") {
 			ip = strings.Replace(actv, "vendor/", "", 1)
 		} else {
-			ip = "github.com/TIBCOSoftware/mashling/" + actv
+			ip = "github.com/sniperkit/snk.fork.tibcosoftware-mashling/" + actv
 		}
 		ip = strings.Replace(ip, "/activity.json", "", 1)
 		pn := strings.Replace(actv, "/activity.json", "", 1)
@@ -58,7 +63,7 @@ func main() {
 		if strings.HasPrefix(ac, "vendor/") {
 			ip = strings.Replace(ac, "vendor/", "", 1)
 		} else {
-			ip = "github.com/TIBCOSoftware/mashling/" + ac
+			ip = "github.com/sniperkit/snk.fork.tibcosoftware-mashling/" + ac
 		}
 		ip = strings.Replace(ip, "/action.json", "", 1)
 		pn := strings.Replace(ac, "/action.json", "", 1)
@@ -96,8 +101,8 @@ package registry
 import (
   "github.com/TIBCOSoftware/flogo-lib/core/activity"
   "github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/activities"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry/triggers"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/activities"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry/triggers"
   {{- range .Triggers }}
   {{ .PackageName }} "{{.ImportPath}}"
   {{- end }}

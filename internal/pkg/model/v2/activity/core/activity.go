@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package Core
 
 import (
@@ -11,9 +16,10 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	mservice "github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/activity/service"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
-	"github.com/TIBCOSoftware/mashling/pkg/strings"
+
+	mservice "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/activity/service"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/strings"
 )
 
 var log = logger.GetLogger("activity-mashling-core")

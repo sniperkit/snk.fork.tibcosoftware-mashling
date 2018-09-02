@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package command
 
 import (
 	"log"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model"
 )
 
 func init() {
@@ -23,7 +29,7 @@ var (
 var cliCommand = &cobra.Command{
 	Use:   "mashling-cli",
 	Short: "mashling-cli is a CLI to help build mashling-gateway instances",
-	Long:  "A CLI to build custom mashling-gateway instances, publish configurations to Mashery, and more. Complete documentation is available at https://github.com/TIBCOSoftware/mashling",
+	Long:  "A CLI to build custom mashling-gateway instances, publish configurations to Mashery, and more. Complete documentation is available at https://github.com/sniperkit/snk.fork.tibcosoftware-mashling",
 }
 
 // Execute executes registered commands.

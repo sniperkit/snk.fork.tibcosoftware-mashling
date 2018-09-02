@@ -1,6 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package util
 
-import "strings"
+import (
+	"strings"
+)
 
 // ReplaceNth Replaces the nth occurrence of old in s by new.
 func ReplaceNth(s, old, new string, n int) string {

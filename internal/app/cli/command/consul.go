@@ -1,10 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package command
 
 import (
 	"log"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/consul"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/consul"
 )
 
 func init() {

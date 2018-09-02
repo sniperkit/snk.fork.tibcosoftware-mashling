@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v2
 
 // Version is the schema version identifier embedded in the Mashling configuration file.

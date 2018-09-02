@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -12,7 +17,8 @@ import (
 	"sync"
 
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 var fLogger = logger.GetLogger("event-link-operator")

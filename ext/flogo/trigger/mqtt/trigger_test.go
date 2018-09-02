@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package mqtt
 
 import (
@@ -12,7 +17,6 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 	opentracing "github.com/opentracing/opentracing-go"
 )

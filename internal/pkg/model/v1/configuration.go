@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v1
 
 import (
@@ -8,12 +13,13 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/app"
 	"github.com/TIBCOSoftware/flogo-lib/engine"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo/registry"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/cache"
-	gwerrors "github.com/TIBCOSoftware/mashling/internal/pkg/model/errors"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v1/schema"
-	"github.com/TIBCOSoftware/mashling/lib/types"
-	"github.com/TIBCOSoftware/mashling/pkg/files"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo/registry"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/cache"
+	gwerrors "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/errors"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v1/schema"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/files"
 )
 
 var (

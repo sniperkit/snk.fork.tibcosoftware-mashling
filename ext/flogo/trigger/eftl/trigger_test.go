@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -16,10 +21,10 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/mashling/lib/eftl"
-	"github.com/TIBCOSoftware/mashling/lib/util"
-
 	opentracing "github.com/opentracing/opentracing-go"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/eftl"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 func getJsonMetadata() string {

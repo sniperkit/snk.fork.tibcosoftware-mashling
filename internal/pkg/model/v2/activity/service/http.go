@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package service
 
 import (
@@ -14,7 +19,7 @@ import (
 
 	"github.com/imdario/mergo"
 
-	"github.com/TIBCOSoftware/mashling/lib/util"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 const (

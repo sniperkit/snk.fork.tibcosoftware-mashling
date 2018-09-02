@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpc
 
 import (
@@ -5,11 +10,9 @@ import (
 	"strings"
 
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-
-	"google.golang.org/grpc/credentials"
-
 	"github.com/imdario/mergo"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 // log is the default package logger

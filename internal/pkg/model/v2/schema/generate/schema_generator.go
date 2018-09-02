@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // +build ignore
 
 package main
@@ -8,8 +13,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
 	"github.com/mashling-support/jsonschema"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
 )
 
 func main() {

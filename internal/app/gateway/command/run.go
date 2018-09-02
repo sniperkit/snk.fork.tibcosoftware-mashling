@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package command
 
 import (
@@ -8,14 +13,15 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/TIBCOSoftware/mashling/internal/app/assets"
-	"github.com/TIBCOSoftware/mashling/internal/app/gateway/flogo"
-	"github.com/TIBCOSoftware/mashling/internal/app/version"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/cache"
-	gwerrors "github.com/TIBCOSoftware/mashling/internal/pkg/model/errors"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/assets"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/gateway/flogo"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/app/version"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/cache"
+	gwerrors "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/errors"
 )
 
 func init() {
@@ -45,7 +51,7 @@ var (
 var gatewayCommand = &cobra.Command{
 	Use:   "mashling-gateway",
 	Short: "mashling-gateway is a tool that serves up mashling instances",
-	Long: "A static binary that executes Mashling gateway logic defined in a mashling.json configuration file. Complete documentation is available at https://github.com/TIBCOSoftware/mashling\n\n" +
+	Long: "A static binary that executes Mashling gateway logic defined in a mashling.json configuration file. Complete documentation is available at https://github.com/sniperkit/snk.fork.tibcosoftware-mashling\n\n" +
 		"Version: " + version.Version + "\nBuild Date: " + version.BuildDate + "\n",
 	Run: run,
 }

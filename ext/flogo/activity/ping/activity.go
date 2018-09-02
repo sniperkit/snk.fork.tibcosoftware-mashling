@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package ping
 
 import (
@@ -6,7 +11,8 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 // log is the default package logger

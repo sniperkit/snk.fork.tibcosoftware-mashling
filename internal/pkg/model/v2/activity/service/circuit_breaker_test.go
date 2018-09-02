@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package service
 
 import (
@@ -6,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
 )
 
 func TestCircuitBreakerModeA(t *testing.T) {

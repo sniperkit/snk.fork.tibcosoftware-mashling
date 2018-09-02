@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -14,11 +19,11 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/mashling/lib/eftl"
-	"github.com/TIBCOSoftware/mashling/lib/util"
-
 	opentracing "github.com/opentracing/opentracing-go"
 	ctx "golang.org/x/net/context"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/eftl"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 const (

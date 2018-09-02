@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // This program generates a stub gateway project with no activities or triggers pre-defined.
 
 // +build ignore
@@ -10,7 +15,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/TIBCOSoftware/mashling/pkg/files"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/pkg/files"
 )
 
 func main() {

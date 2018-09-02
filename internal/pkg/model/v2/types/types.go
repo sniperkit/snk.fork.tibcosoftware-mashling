@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package types
 
 // Schema contains schema version and configuration information for a gateway instance.

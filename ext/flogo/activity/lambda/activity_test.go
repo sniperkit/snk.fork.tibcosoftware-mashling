@@ -1,9 +1,13 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package lambda
 
 import (
-	"testing"
-
 	"io/ioutil"
+	"testing"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )

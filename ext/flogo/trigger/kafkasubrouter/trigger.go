@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -7,26 +12,23 @@ package kafkasubrouter
 
 import (
 	"context"
+	"crypto/tls"
+	"crypto/x509"
+	"fmt"
+	"io/ioutil"
 	"os"
 	"os/signal"
 	"strconv"
 	"strings"
-
-	"fmt"
-
 	"time"
-
-	"crypto/tls"
-	"crypto/x509"
-
-	"io/ioutil"
 
 	"github.com/Shopify/sarama"
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/mashling/lib/conditions"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/conditions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 // log is the default package logger

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpcsupport
 
 import (
@@ -13,8 +18,8 @@ import (
 
 const (
 	serviceName = "\nservice "
-	grpcGenPath = "github.com/TIBCOSoftware/mashling/gen/grpc"
-	impPath     = "github.com/TIBCOSoftware/mashling/cmd/mashling-gateway"
+	grpcGenPath = "github.com/sniperkit/snk.fork.tibcosoftware-mashling/gen/grpc"
+	impPath     = "github.com/sniperkit/snk.fork.tibcosoftware-mashling/cmd/mashling-gateway"
 )
 
 var (
@@ -108,7 +113,7 @@ import (
 	"log"
 	"fmt"
 	"strings"
-	servInfo "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/grpc"
+	servInfo "github.com/sniperkit/snk.fork.tibcosoftware-mashling/ext/flogo/trigger/grpc"
   	pb "{{.ProtoImpPath}}"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
@@ -205,9 +210,9 @@ var registryClientTemplate = template.Must(template.New("").Parse(`// This file 
 		"errors"
 		"log"
 
-		"github.com/TIBCOSoftware/mashling/internal/pkg/grpcsupport"
+		"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/grpcsupport"
 
-		servInfo "github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/activity/service/grpc"
+		servInfo "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/activity/service/grpc"
 		pb "{{.ProtoImpPath}}"
 		"google.golang.org/grpc"
 	)
@@ -399,8 +404,8 @@ func createImportFile(appPath string) error {
 	package main
 
 	import (
-		_ "github.com/TIBCOSoftware/mashling/gen/grpc/client"
-		_ "github.com/TIBCOSoftware/mashling/gen/grpc/server"
+		_ "github.com/sniperkit/snk.fork.tibcosoftware-mashling/gen/grpc/client"
+		_ "github.com/sniperkit/snk.fork.tibcosoftware-mashling/gen/grpc/server"
 	)
 
 	`

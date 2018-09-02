@@ -1,12 +1,16 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package service
 
 import (
 	"errors"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/activity/service/grpc"
-
-	wsproxy "github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/activity/service/wsproxy"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/activity/service/grpc"
+	wsproxy "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/activity/service/wsproxy"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
 )
 
 // Service encapsulates everything necessary to execute a step against a target.

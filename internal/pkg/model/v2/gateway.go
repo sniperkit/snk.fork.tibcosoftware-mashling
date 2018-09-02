@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v2
 
 import (
@@ -5,11 +10,12 @@ import (
 
 	"github.com/TIBCOSoftware/flogo-lib/app"
 	"github.com/TIBCOSoftware/flogo-lib/engine"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/consul"
-	gwerrors "github.com/TIBCOSoftware/mashling/internal/pkg/model/errors"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/services"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/swagger"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/consul"
+	gwerrors "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/errors"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/services"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/swagger"
 )
 
 // Gateway contains all data needed to run a v2 mashling gateway app.
@@ -109,7 +115,7 @@ func (g *Gateway) Swagger(hostname string, triggerName string) ([]byte, error) {
 	var endpoints []swagger.Endpoint
 	for _, trigger := range gConf.Gateway.Triggers {
 		if triggerName == "" || triggerName == trigger.Name {
-			if trigger.Type == "github.com/TIBCOSoftware/flogo-contrib/trigger/rest" || trigger.Type == "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger" {
+			if trigger.Type == "github.com/TIBCOSoftware/flogo-contrib/trigger/rest" || trigger.Type == "github.com/sniperkit/snk.fork.tibcosoftware-mashling/ext/flogo/trigger/gorillamuxtrigger" {
 				for _, handler := range trigger.Handlers {
 					var endpoint swagger.Endpoint
 					endpoint.Name = trigger.Name
@@ -121,7 +127,7 @@ func (g *Gateway) Swagger(hostname string, triggerName string) ([]byte, error) {
 					case "github.com/TIBCOSoftware/flogo-contrib/trigger/rest":
 						beginDelim = ':'
 						endDelim = '/'
-					case "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger":
+					case "github.com/sniperkit/snk.fork.tibcosoftware-mashling/ext/flogo/trigger/gorillamuxtrigger":
 						beginDelim = '{'
 						endDelim = '}'
 					default:
@@ -143,7 +149,7 @@ func (g *Gateway) ConsulServiceDefinition() ([]consul.ServiceDefinition, error) 
 	gConf := g.MashlingConfig.(types.Schema)
 	var consulServiceDefinitions []consul.ServiceDefinition
 	for _, trigger := range gConf.Gateway.Triggers {
-		if trigger.Type == "github.com/TIBCOSoftware/flogo-contrib/trigger/rest" || trigger.Type == "github.com/TIBCOSoftware/mashling/ext/flogo/trigger/gorillamuxtrigger" {
+		if trigger.Type == "github.com/TIBCOSoftware/flogo-contrib/trigger/rest" || trigger.Type == "github.com/sniperkit/snk.fork.tibcosoftware-mashling/ext/flogo/trigger/gorillamuxtrigger" {
 			var consulServiceDefinition consul.ServiceDefinition
 			consulServiceDefinition.Name = trigger.Name
 			consulServiceDefinition.Port = trigger.Settings["port"].(string)

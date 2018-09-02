@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Get Parameters from some url
 var getUrlParameter = function getUrlParameter(sPageURL) {
     var url = sPageURL.split('?');

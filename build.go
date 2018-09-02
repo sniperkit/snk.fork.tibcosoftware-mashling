@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
@@ -15,7 +20,7 @@ import (
 
 const (
 	// ImportPath is the root import path regardless of location.
-	ImportPath = "github.com/TIBCOSoftware/mashling"
+	ImportPath = "github.com/sniperkit/snk.fork.tibcosoftware-mashling"
 	// Git is the git executable.
 	Git = "git"
 	// Go is the go executable.

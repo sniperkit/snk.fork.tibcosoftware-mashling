@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
  * Copyright (c) 2001-2017 TIBCO Software Inc.
  * All Rights Reserved. Confidential & Proprietary.
  * For more information, please contact:

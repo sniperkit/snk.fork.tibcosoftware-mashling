@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 //go:generate go run generate/schema_generator.go
 //go:generate go-bindata -pkg schema -o assets.go schema.json
 

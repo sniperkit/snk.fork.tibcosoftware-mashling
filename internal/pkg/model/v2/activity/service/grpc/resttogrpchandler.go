@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpc
 
 import (
@@ -5,8 +10,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/TIBCOSoftware/mashling/lib/util"
 	"google.golang.org/grpc"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 func restTogRPCHandler(g *GRPC, conn *grpc.ClientConn) error {

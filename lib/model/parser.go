@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -10,18 +15,18 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"strings"
-
 	"reflect"
 	"sort"
+	"strings"
 
 	"github.com/TIBCOSoftware/flogo-lib/app"
 	faction "github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/data"
 	ftrigger "github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	condition "github.com/TIBCOSoftware/mashling/lib/conditions"
-	"github.com/TIBCOSoftware/mashling/lib/types"
-	"github.com/TIBCOSoftware/mashling/lib/util"
+
+	condition "github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/conditions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/types"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 // ParseGatewayDescriptor parse the application descriptor

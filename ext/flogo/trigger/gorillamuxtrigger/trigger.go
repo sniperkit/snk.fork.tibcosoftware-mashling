@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -23,9 +28,6 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/core/action"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/TIBCOSoftware/mashling/lib/util"
-
-	condition "github.com/TIBCOSoftware/mashling/lib/conditions"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
 	lightstep "github.com/lightstep/lightstep-tracer-go"
@@ -34,6 +36,9 @@ import (
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	"sourcegraph.com/sourcegraph/appdash"
 	appdashtracing "sourcegraph.com/sourcegraph/appdash/opentracing"
+
+	condition "github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/conditions"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 const (

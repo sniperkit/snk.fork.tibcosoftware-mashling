@@ -1,4 +1,9 @@
 /*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
+/*
 * Copyright © 2017. TIBCO Software Inc.
 * This file is subject to the license terms contained
 * in the license file that is distributed with this file.
@@ -12,8 +17,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/TIBCOSoftware/mashling/lib/util"
 	"github.com/pkg/errors"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/lib/util"
 )
 
 func GetOperatorInExpression(expression string) (*Operator, *string, error) {

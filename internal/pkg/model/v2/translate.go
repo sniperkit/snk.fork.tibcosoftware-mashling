@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package v2
 
 import (
@@ -8,8 +13,9 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/app"
 	faction "github.com/TIBCOSoftware/flogo-lib/core/action"
 	ftrigger "github.com/TIBCOSoftware/flogo-lib/core/trigger"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v1"
-	"github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/types"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v1"
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/types"
 )
 
 type mapping struct {
@@ -124,7 +130,7 @@ var actionTemplate = template.Must(template.New("").Parse(`{
             "description": "Execute Mashling Core",
             "type": 1,
             "activityType": "mashling-core",
-            "activityRef": "github.com/TIBCOSoftware/mashling/internal/pkg/model/v2/activity/core",
+            "activityRef": "github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/model/v2/activity/core",
             "attributes": [
               {
                 "name": "mashlingPayload",

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package command
 
 import (
@@ -5,8 +10,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/TIBCOSoftware/mashling/internal/pkg/mashery"
 	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.tibcosoftware-mashling/internal/pkg/mashery"
 )
 
 func init() {

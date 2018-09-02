@@ -1,7 +1,11 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package grpc
 
 import (
-
 	//used for generated stub files
 	_ "github.com/golang/protobuf/proto"
 	"google.golang.org/grpc"
